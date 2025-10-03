@@ -69,8 +69,7 @@ docker build -t josero31/nginx-2048:1.0 .
 docker images
 ```
 
-**Captura de pantalla:**
-[INSERTAR CAPTURA DEL COMANDO docker images MOSTRANDO TU IMAGEN]
+<img width="395" height="56" alt="image" src="https://github.com/user-attachments/assets/1396f600-5af8-4df0-8207-2ac47448545d" />
 
 ---
 
@@ -78,7 +77,7 @@ docker images
 
 Se agregó la etiqueta `latest` a la imagen:
 
-```bash
+```
 docker tag josero31/nginx-2048:1.0 josero31/nginx-2048:latest
 ```
 
@@ -91,7 +90,7 @@ La imagen ahora tiene dos etiquetas: `1.0` y `latest`, ambas apuntando a la mism
 
 Se realizó una prueba local del contenedor:
 
-```bash
+```
 docker run -d -p 8080:80 josero31/nginx-2048:1.0
 ```
 
@@ -99,9 +98,6 @@ docker run -d -p 8080:80 josero31/nginx-2048:1.0
 - Se accedió a `http://localhost:8080`
 - La aplicación funcionó correctamente
 - Se detuvo el contenedor después de las pruebas
-
-**Captura de pantalla:**
-[INSERTAR CAPTURA DE LA APLICACIÓN FUNCIONANDO EN LOCALHOST]
 
 ---
 
@@ -113,7 +109,7 @@ Se creó un token de acceso en Docker Hub con los siguientes permisos:
 - **Descripción:** practica-docker
 
 #### 5.2 Inicio de Sesión
-```bash
+```
 docker login -u josero31
 ```
 
@@ -127,8 +123,7 @@ docker push josero31/nginx-2048:latest
 - Imagen disponible públicamente en Docker Hub
 - URL: https://hub.docker.com/r/josero31/nginx-2048
 
-**Captura de pantalla:**
-[INSERTAR CAPTURA DE TU REPOSITORIO EN DOCKER HUB]
+<img width="912" height="400" alt="image" src="https://github.com/user-attachments/assets/0b72eb52-3252-4104-9553-fe655a9bf678" />
 
 ---
 
@@ -172,16 +167,16 @@ Se utilizó Railway.app como alternativa a AWS por ser una plataforma gratuita y
 - Railway asignó automáticamente una URL pública
 
 **URL de la aplicación desplegada:**
-[INSERTAR TU URL DE RAILWAY]
+https://nginx-2048-production.up.railway.app/
 
-**Captura de pantalla:**
-[INSERTAR CAPTURA DE LA APLICACIÓN FUNCIONANDO EN RAILWAY]
+<img width="941" height="472" alt="image" src="https://github.com/user-attachments/assets/f6e1f1e4-7468-4d13-ab24-4a8d91c2fd94" />
+
 
 ---
 
 ## Comandos Utilizados (Resumen)
 
-```bash
+```
 # Construir la imagen
 docker build -t josero31/nginx-2048:1.0 .
 
@@ -224,32 +219,13 @@ practica-docker-web/
 - **Repositorio:** josero31/nginx-2048
 - **Etiquetas:** 1.0, latest
 - **Estado:** Público y accesible
-- **Tamaño:** [Indica el tamaño de tu imagen]
+- **Tamaño:** 59.5 MB
 
 ### Aplicación Desplegada
 - **Plataforma:** Railway.app
-- **URL pública:** [Tu URL]
+- **URL pública:** https://nginx-2048-production.up.railway.app/
 - **Estado:** Funcionando correctamente
 - **Contenido:** Juego 2048 completamente funcional
-
----
-
-## Problemas Encontrados y Soluciones
-
-### Problema 1: Error con espacios en el nombre de usuario
-**Descripción:** El nombre de usuario local contenía espacios lo que causaba errores en el comando `docker build`.
-
-**Solución:** Se utilizó el nombre de usuario de Docker Hub (sin espacios) directamente en el comando de construcción.
-
-### Problema 2: Email no verificado en Docker Hub
-**Descripción:** Al intentar construir la imagen, apareció el error "email must be verified".
-
-**Solución:** Se verificó el email en Docker Hub antes de continuar.
-
-### Problema 3: Etiquetado incorrecto
-**Descripción:** Se olvidó reemplazar el placeholder del usuario en el comando de etiquetado.
-
-**Solución:** Se eliminó la imagen incorrecta y se volvió a etiquetar correctamente.
 
 ---
 
@@ -280,7 +256,7 @@ practica-docker-web/
 
 ## Repositorio del Proyecto
 
-**GitHub:** [https://github.com/[tu-usuario]/practica-dockerizar-web](URL de tu repositorio)
+**GitHub:** https://github.com/JA-Rodriguez-Ozuna/practica-dockerizar-web.git
 
 ---
 
@@ -290,5 +266,5 @@ Este proyecto se realizó con fines educativos como parte del curso de Implantac
 
 ---
 
-**Fecha de entrega:** [Fecha]  
-**Autor:** [Tu nombre]
+**Fecha de entrega:** 10/04/2025 
+**Autor:** Jose Anibal Rodriguez Ozuna
