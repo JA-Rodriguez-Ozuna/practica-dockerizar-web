@@ -50,8 +50,7 @@ CMD ["nginx", "-g", "daemon off;"]
 - Se clona el repositorio del juego 2048 en `/var/www/html/`
 - Se expone el puerto 80 para acceso HTTP
 - Se configura Nginx para ejecutarse en primer plano
-
-![Dockerfile en el editor](<img width="778" height="329" alt="evidencia_dockerfile_editor" src="https://github.com/user-attachments/assets/2e895f15-56f4-4072-aa66-3c0a1cef9378" />)
+<img width="778" height="329" alt="Image" src="https://github.com/user-attachments/assets/16cc91cb-d260-4147-820d-1245e3ea0694" />
 
 ### 2. Construcción de la Imagen Docker
 
