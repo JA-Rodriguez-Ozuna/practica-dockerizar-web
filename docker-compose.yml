@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  web:
+    image: tu-usuario-dockerhub/nginx-2048:latest
+    container_name: web-2048
+    ports:
+      - "80:80"
+    restart: always
